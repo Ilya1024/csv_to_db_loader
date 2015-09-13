@@ -2,7 +2,8 @@
 require_once __DIR__.'\class.tableLoader.php';
 use inc\csvLoader\tableLoader as tableLoader;
 
-$DBLink = mysqli_connect('localhost', 'user', 'pass','test');
+$DBLink = mysql_connect('localhost', 'user', 'pass');
+mysql_select_db('test');
 $docroot = @$_SERVER[DOCUMENT_ROOT];
 $inputfile = __DIR__.'\in\test.csv';
 $csv_csv_delimiter = ';';
