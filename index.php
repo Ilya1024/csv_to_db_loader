@@ -7,7 +7,6 @@ $csv_csv_delimiter = ';';
 $tablename ='users_load';
 $tablename_recordid_keyname='m_id';
 $temp_dir=__DIR__.'/cache/';
-die($inputfile);
 
 # данные для связи полей в файле csv с временной таблицей
 $csv_temp_relations = array(
