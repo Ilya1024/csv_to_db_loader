@@ -2,8 +2,6 @@
 require_once __DIR__.'\class.tableLoader.php';
 use inc\csvLoader\tableLoader as tableLoader;
 
-header('Content-Type: text/html; charset=utf-8');
-
 $DBLink = mysql_connect('localhost', 'user', 'pass');
 mysql_select_db('test');
 $docroot = @$_SERVER[DOCUMENT_ROOT];
