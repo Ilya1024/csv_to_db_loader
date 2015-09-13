@@ -3,11 +3,11 @@ require_once __DIR__.'\class.tableLoader.php';
 $DBLink = mysqli_connect('localhost', 'user', 'pass','test');
 $docroot = @$_SERVER[DOCUMENT_ROOT];
 $inputfile = __DIR__.'\in\test.csv';
-die($inputfile);
 $csv_csv_delimiter = ';';
-$tablename ='mytable';
+$tablename ='users_load';
 $tablename_recordid_keyname='m_id';
-$temp_dir=$docroot.'cache/reporter/';
+$temp_dir=__DIR__.'/cache/';
+die($inputfile);
 
 # данные для связи полей в файле csv с временной таблицей
 $csv_temp_relations = array(
